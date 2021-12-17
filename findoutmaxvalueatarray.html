@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayX = [400, 200, 600, 100, 1000, 500, 700, 800, 900, 300];
+    let max = arrayX[0];
+    let index = 0;   //Khai báo biến index mặc định gán giá trị 0
+    // để lưu CHỈ SỐ của phần tử lớn nhất trong mảng
+    // index không phải là biến đếm.
+    for (let dem = 1; dem < arrayX.length; dem++) {
+        if (arrayX[dem] > max) {
+            max = arrayX[dem] ;
+            index = dem;  /*Vị trí của phần tử*/
+        }
+    }
+    document.writeln("Phần tử lớn nhất là "+max+" nằm ở vị trí "+index)
+</script>
+</body>
+</html>
